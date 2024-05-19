@@ -76,12 +76,23 @@
      justify-content: center;
      align-items: center;
      height: 400px;
-     transition: all 0.3s ease-in;  /* not working*/
+     /*transition: all 0.3s ease-in;  /* not working*/
      top: 52px;    /* length of nav bar measured is 52px */
      left: 0;
      width: 100%;
      gap: 24px;
      background-color: #333;
+     animation-name: navAnimation;
+     animation-duration: 3s;
+     animation-timing-function: ease;
+     animation-iteration-count: 1;
+
+    }
+    @keyframes navAnimation {
+
+      from{height: 0px;}
+      to{height: 400px;}
+      
     }
 
   }
